@@ -231,10 +231,9 @@
             <img src="./assets/method.png" alt="" width="1080px" style="max-width: 100%; height: auto;" />
         </div>
         <p style="text-align: justify">
-            Given a text-video pair (e.g., “a man is skiing”) as input, our method leverages the pretrained T2I diffusion 
-            models for T2V generation. During fine-tuning, we update the projection matrices in attention blocks using the 
-            standard diffusion training loss. During inference, we sample a novel video from the latent noise inverted 
-            from the input video, guided by an edited prompt (e.g., “Spider Man is surfing on the beach, cartoon style”).
+            Given a source video, a text prompt, and a reference image (e.g., “a purple minivan”), our method enables consistent video editing
+	    with high-fidelity output. We introduce the one-shot tuning mecahnism for diffusion models to directly edit objects on the atlas
+	    textures.  
         </p>
         
         <p class="section">&nbsp;</p>
