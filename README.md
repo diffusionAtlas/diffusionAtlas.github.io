@@ -1,1 +1,1 @@
-# diffusionAtlas.github.io
+# diffusionAtlas project page
