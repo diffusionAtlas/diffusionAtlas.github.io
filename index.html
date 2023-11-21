@@ -223,16 +223,18 @@
 	    show that our method outperforms state-of-the-art methods in achieving consistent high-fidelity video-object editing.
         <p class="section">&nbsp;</p>
 
-        <p class="section"><b>Introduction</b></p>
-        <div style="text-align: center">
-            <img src="./assets/teaser-video.gif" alt="" width="1080px" style="max-width: 100%; height: auto;" />
-        </div>
-
         <p class="section"><b>Method</b></p>
         <div style="text-align: center">
-            <img src="./assets/framework.png" alt="" width="800px" style="max-width: 100%; height: auto;" />
+            <img src="./assets/method.png" alt="" width="800px" style="max-width: 100%; height: auto;" />
         </div>
         </br>
+	<p style="text-align: justify">
+            Given a source video, a text prompt, and a reference image (e.g., “a purple minivan”), our method enables consistent video editing
+	    with high-fidelity output. We introduce the one-shot tuning mechanism for diffusion models to update the attention blocks for the
+	    source structure and to edit the objects directly on atlas textures. After getting the edited foreground atlas, we
+	    optimize the UV mappings using constraints exploited from the original UV space structures and a pretrained diffusion model to propagate
+	    edited atlas textures back to the frames more naturally.
+        </p>
         <p style="text-align: center">
             <em>The first framework for generic video editing with both visual and textual clues.</em>
         </p>
