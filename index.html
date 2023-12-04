@@ -48,7 +48,7 @@
     </p>
 
     <div class="container">
-        <table width="2160px" border="0" align="center">
+        <table width="1920px" border="0" align="center">
             <tbody>
                 <tr>
                     <div id="imageCarousel" class="carousel slide teaser-carousel" data-ride="carousel" data-interval="5000">
@@ -58,8 +58,6 @@
                             <div class="carousel-item active">
                                 <div>
                                     <img class="teaser-img" src="./assets/data/boat.gif" />
-				    <span style="font-size: 150%;">+</span>
-				    <img class="teaser-img-ref" id="boat-ref" src="./assets/reference/boat/yacht.png" />
                                     <span style="font-size: 150%;">→</span>
                                     <img id="boat-result" class="teaser-img" src="./assets/results/boat/yacht.gif" />
                                 </div>
@@ -68,10 +66,12 @@
                                     <div onclick="toggle_prompt('boat-yacht', ['boat-warshipCartoon', 'boat-yellowYacht'], 'boat-result')" class="caption caption-active" id="boat-yacht">
                                        <img class="teaser-img-ref" id="ref-yacht" src="./assets/reference/boat/yacht.png" />
 				       "<span style="color: crimson">A yacht</span> is sailing on a river."</div>
+				    <br />
                                     <div onclick="toggle_prompt('boat-yellowYacht', ['boat-warshipCartoon', 'boat-yacht'], 'boat-result')" class="caption" id="boat-yellowYacht">
                                        <img class="teaser-img-ref" id="ref-yellow-yacht" src="./assets/reference/boat/yellow_yacht.png" />
 				       "<span style="color: crimson">A yellow yacht</span> is sailing on <span style="color: steelblue">a river in a bad weather</span>."</div>
-                                    <div onclick="toggle_prompt('boat-warshipCartoon', ['boat-yellowYacht', 'boat-yacht'], 'boat-result')" class="caption" id="boat-warshipCartoon">
+                                    <br />
+				    <div onclick="toggle_prompt('boat-warshipCartoon', ['boat-yellowYacht', 'boat-yacht'], 'boat-result')" class="caption" id="boat-warshipCartoon">
                                         <img class="teaser-img-ref" id="ref-warship" src="./assets/reference/boat/warship.png" />
 					"<span style="color: crimson">A warship</span> is sailing on <span style="color: steelblue">a battlefield, cartoon style</span>."</div>
                                 </div>
@@ -81,8 +81,6 @@
                             <div class="carousel-item">
                                 <div>
                                     <img class="teaser-img" src="./assets/data/kite-surf.gif" />
-				    <span style="font-size: 150%;">+</span>
-				    <img class="teaser-img-ref" id="kite-surf-ref" src="./assets/reference/kite-surf/monkey.png" />
                                     <span style="font-size: 150%;">→</span>
                                     <img id="kite-surf-result" class="teaser-img" src="./assets/results/kite-surf/hot_spring_monkey.gif" />
                                 </div>
@@ -100,8 +98,6 @@
                             <div class="carousel-item">
                                 <div>
                                     <img class="teaser-img" src="./assets/data/paragliding.gif" />
-				    <span style="font-size: 150%;">+</span>
-				    <img class="teaser-img-ref" id="paragliding-ref" src="./assets/reference/paragliding/hot_air_balloon.png" />
                                     <span style="font-size: 150%;">→</span>
                                     <img id="paragliding-result" class="teaser-img" src="./assets/results/paragliding/autumn_hot_air_v2.gif" />
                                 </div>
@@ -119,8 +115,6 @@
                             <div class="carousel-item">
                                 <div>
                                     <img class="teaser-img" src="./assets/data/car-turn.gif" />
-				    <span style="font-size: 150%;">+</span>
-				    <img class="teaser-img-ref" id="car-turn-ref" src="./assets/reference/car-turn/minivan.png" />
                                     <span style="font-size: 150%;">→</span>
                                     <img id="car-turn-result" class="teaser-img" src="./assets/results/car-turn/alps_suzuki.gif" />
                                 </div>
@@ -141,8 +135,6 @@
                             <div class="carousel-item">
                                 <div>
                                     <img class="teaser-img" src="./assets/data/blackswan.gif" />
-				    <span style="font-size: 150%;">+</span>
-				    <img class="teaser-img-ref" id="blackswan-ref" src="./assets/reference/blackswan/white_swan.png" />
                                     <span style="font-size: 150%;">→</span>
                                     <img id="blackswan-result" class="teaser-img" src="./assets/results/blackswan/whiteswan.gif" />
                                 </div>
