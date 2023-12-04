@@ -8,4 +8,8 @@ file_paths = {
 
     "paragliding-hotair": "./assets/results/paragliding/autumn_hot_air_v2.gif",
     "paragliding-balloon": "./assets/results/paragliding/city_balloon.gif",
+
+    "car-turn-alps": "./assets/results/paragliding/alps_suzuki.gif",
+    "car-turn-snow": "./assets/results/paragliding/snowy_suzuki.gif",
+    "car-turn-minivan": "./assets/results/paragliding/snowy_minivan.gif",
 }
