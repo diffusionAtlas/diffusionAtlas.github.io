@@ -11,178 +11,168 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>diffusionAtlas</title>
+    <title>VidEdit</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta name="description"
-        content="Project page for &#39;DiffusionAtlas: High-Fidelity Consistent Diffusion Video Editing.&#39;">
-    <link rel="icon" href="./assets/showlab.ico">
+        content="Project page for &#39;VidEdit: Zero-Shot and Spatially Aware Text-Driven Video Editing.&#39;">
+    <!--<link rel="icon" href="./assets/showlab.ico">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>VidEdit</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="description"
+        content="Project page for &#39;VidEdit: Zero-Shot and Spatially Aware Text-Driven Video Editing.&#39;">
+    <!--<link rel="icon" href="./assets/showlab.ico">-->
 </head>
 
 <body>
-    <p class="title">DiffusionAtlas: High-Fidelity Consistent Diffusion Video Editing</p>
-    <div style="text-align: center; font-size: 20pt; margin-bottom: 15px">
-        <span>Anonymous CVPR submission</span>
-    </div>
-	
+    <p class="title">VidEdit: Zero-Shot and Spatially Aware Text-Driven Video Editing</p>
     <p class="author">
-        <span class="author">Paper ID 7225</span>
+        <span class="author">
+            <a href="https://www.linkedin.com/in/paul-couairon/">Paul Couairon</a><sup>1, 3</sup>
+        </span>
+        <span class="author">
+            <a href="https://cedric.cnam.fr/~rambourc/">Clément Rambour</a><sup>2</sup>
+        </span>
+        <span class="author">
+            <a href="">Jean-Emmanuel Haugeard</a><sup>3</sup>
+        </span>
+        <span class="author">
+            <a href="https://thome.isir.upmc.fr">Nicolas Thome</a><sup>1</sup>
+        </span>
     </p>
-    <!-- <p class="author">
-        <span class="author">
-            <a href="https://zhangjiewu.github.io/">Jay Zhangjie Wu</a><sup>1</sup>
-        </span>
-        <span class="author">
-            <a href="https://geyixiao.com/">Yixiao Ge</a><sup>3</sup>
-        </span>
-        <span class="author">
-            <a href="https://xinntao.github.io/">Xintao Wang</a><sup>3</sup>
-        </span>
-        <span class="author">
-            <a href="">Stan Weixian Lei</a><sup>1</sup>
-        </span>
-        <span class="author">
-            <a href="https://ycgu.site/">Yuchao Gu</a><sup>1</sup>
-        </span>
-        <span class="author">
-            <a href="">Yufei Shi</a><sup>1</sup>
-        </span>
-        <span class="author">
-            <a href="https://www.comp.nus.edu.sg/~whsu/">Wynne Hsu</a><sup>2</sup>
-        </span>
-        <span class="author">
-            <a href="https://scholar.google.com/citations?user=4oXBp9UAAAAJ&hl=en">Ying Shan</a><sup>3</sup>
-        </span>
-        <span class="author">
-            <a href="https://scholar.google.com/citations?user=mk-F69UAAAAJ&hl=en">Xiaohu Qie</a><sup>4</sup>
-        </span>
-        <span class="author">
-            <a href="https://sites.google.com/view/showlab">Mike Zheng Shou</a><sup>1</sup>
-        </span>
-    </p> -->
 
-    <!-- <p class="affiliations">
-        <span class="author"><sup>1</sup><a href="https://sites.google.com/view/showlab">Show Lab</a>,<sup>2</sup>National University of Singapore</span>
-        <span class="author"><sup>3</sup><a href="https://arc.tencent.com/en/index">ARC Lab</a>,<sup>4</sup>Tencent PCG</span><br/>
-    </p> -->
+    <p class="affiliations">
+        <span class="author"><sup>1</sup>Sorbonne Université, ISIR, Paris, France</span>
+        <span class="author"><sup>2</sup>CNAM, CEDRIC, Paris, France</span><br/>
+        <span class="author"><sup>3</sup>Thales SIX GTS France, Palaiseau, France</span>
+    </p>
 
     <p class="menu">
-        <a style="color: steelblue" href="https://arxiv.org/abs/2212.11565">[Paper (arXiv)]</a> 
-        <a style="color: steelblue" href="https://github.com/showlab/Tune-A-Video" >[Code (Github)]</a>
-        <a style="color: steelblue" href="https://colab.research.google.com/github/showlab/Tune-A-Video/blob/main/notebooks/Tune-A-Video.ipynb">[Demo (Colab)]</a>
-        <a style="color: steelblue" href="https://huggingface.co/spaces/Tune-A-Video-library/Tune-A-Video-inference">[Demo (Hugging Face)]</a> 
+        <a style="color: steelblue" href="https://arxiv.org/pdf/2306.08707.pdf">[Paper]</a>
+        <a style="color: steelblue" href="https://arxiv.org/abs/2306.08707">[arXiv]</a> 
+        <a style="color: steelblue" href="" >[Code (coming soon)]</a>
     </p>
 
     <div class="container">
-        <table width="1080px" border="0" align="center">
+        <table width="1920px" border="0" align="center">
             <tbody>
                 <tr>
                     <div id="imageCarousel" class="carousel slide teaser-carousel" data-ride="carousel" data-interval="5000">
                         <div class="carousel-inner">
-                            <!-- Rabbit -->
+                            
+                            <!-- Car-turn -->
                             <div class="carousel-item active">
                                 <div>
-                                    <img class="teaser-img" src="./assets/data/rabbit-watermelon.gif" />
+                                    <img class="teaser-img" src="./assets/data/gif/car-turn.gif" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="rabbit-result" class="teaser-img" src="./assets/results/tuneavideo/rabbit-watermelon/puppy.gif" />
+                                    <img id="car-turn-result" class="teaser-img" src="./assets/data/gif/car-turn_rusty.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('rabbit-puppy', ['rabbit-alone', 'rabbit-cat'], 'rabbit-result')" class="caption caption-active" id="rabbit-puppy">
-                                        "A puppy is eating a cheeseburger on the table, comic style"</div>
+                                    <div onclick="toggle_prompt('car-turn-rusty', ['car-turn-flowers', 'car-turn-autumn'], 'car-turn-result')" class="caption caption-active" id="car-turn-rusty">
+                                        car → <span style="color: steelblue">"a rusty jeep"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('rabbit-cat', ['rabbit-alone', 'rabbit-puppy'], 'rabbit-result')" class="caption" id="rabbit-cat">
-                                        "A cat with sunglasses is eating a watermelon on the beach"</div>
+                                    <div onclick="toggle_prompt('car-turn-flowers', ['car-turn-rusty', 'car-turn-autumn'], 'car-turn-result')" class="caption" id="car-turn-flowers">
+                                        grass → <span style="color: steelblue">"a wildflower field"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('rabbit-alone', ['rabbit-puppy', 'rabbit-cat'], 'rabbit-result')" class="caption" id="rabbit-alone">
-                                        "A rabbit is <del>eating a watermelon</del> on the table"</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Basketball -->
-                            <div class="carousel-item">
-                                <div>
-                                    <img class="teaser-img" src="./assets/data/man-basketball.gif" />
-                                    <span style="font-size: 150%;">→</span>
-                                    <img id="basketball-result" class="teaser-img" src="./assets/results/tuneavideo/man-basketball/lego.gif" />
-                                </div>
-                                <br />
-                                <div>
-                                    <div onclick="toggle_prompt('basketball-lego', ['basketball-bond', 'basketball-astronaut'], 'basketball-result')" class="caption caption-active" id="basketball-lego">
-                                        "A lego man in a black suit is dribbling a basketball"</div>
-                                    <br />
-                                    <div onclick="toggle_prompt('basketball-bond', ['basketball-lego', 'basketball-astronaut'], 'basketball-result')" class="caption" id="basketball-bond">
-                                        "James Bond is dribbling a basketball on the beach"</div>
-                                    <br />
-                                    <div onclick="toggle_prompt('basketball-astronaut', ['basketball-lego', 'basketball-bond'], 'basketball-result')" class="caption" id="basketball-astronaut">
-                                        "An astronaut is dribbling a basketball, cartoon style"</div>
+                                    <div onclick="toggle_prompt('car-turn-autumn', ['car-turn-rusty', 'car-turn-flowers'], 'car-turn-result')" class="caption" id="car-turn-autumn">
+                                        mountains + trees + grass → <span style="color: steelblue">"a landscape in autumn"</span></div>
                                 </div>
                             </div>
 
-                            <!-- Car -->
+                            <!-- Motorbike -->
                             <div class="carousel-item">
                                 <div>
-                                    <img class="teaser-img" src="./assets/data/car-turn.gif" />
+                                    <img class="teaser-img" src="./assets/data/gif/motorbike.gif" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="car-result" class="teaser-img" src="./assets/results/tuneavideo/car-turn/car-cartoon.gif" />
+                                    <img id="motorbike-result" class="teaser-img" src="./assets/data/gif/motorbike_golden.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('car-moving-cartoon', ['car-moving-porsche', 'car-moving-snow'], 'car-result')" class="caption caption-active" id="car-moving-cartoon">
-                                        "A jeep car is moving on the road, cartoon style"</div>
+                                    <div onclick="toggle_prompt('motorbike-golden', ['motorbike-roses', 'motorbike-lake'], 'motorbike-result')" class="caption caption-active" id="motorbike-golden">
+                                        persons + motorcycle → <span style="color: steelblue">"two golden statues riding a motorbike"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('car-moving-porsche', ['car-moving-cartoon', 'car-moving-snow'], 'car-result')" class="caption" id="car-moving-porsche">
-                                        "A Porsche car is moving on the beach"</div>
+                                    <div onclick="toggle_prompt('motorbike-roses', ['motorbike-golden', 'motorbike-lake'], 'motorbike-result')" class="caption" id="motorbike-roses">
+                                        potted plants → <span style="color: steelblue">"a bouquet of roses"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('car-moving-snow', ['car-moving-cartoon', 'car-moving-porsche'], 'car-result')" class="caption" id="car-moving-snow">
-                                        "A jeep car is moving on the snow"</div>
+                                    <div onclick="toggle_prompt('motorbike-lake', ['motorbike-roses', 'motorbike-golden'], 'motorbike-result')" class="caption" id="motorbike-lake">
+                                        trees → <span style="color: steelblue">"a mountain lake"</span></div>
                                 </div>
                             </div>
-
-                            <!-- Skiing -->
+                        
+                            <!-- Bus -->
                             <div class="carousel-item">
                                 <div>
-                                    <img class="teaser-img" src="./assets/results/tuneavideo/man-skiing/train.gif" />
+                                    <img class="teaser-img" src="./assets/data/gif/bus.gif" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="skiing-result" class="teaser-img" src="./assets/results/tuneavideo/man-skiing/spiderman-beach.gif" />
+                                    <img id="bus-result" class="teaser-img" src="./assets/data/gif/bus_retrowave.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('skiing-spiderman-beach', ['skiing-wonder-woman', 'skiing-pink-sunset'], 'skiing-result')" class="caption caption-active" id="skiing-spiderman-beach">
-                                        “Spider Man is skiing on the beach, cartoon style”</div>
+                                    <div onclick="toggle_prompt('bus-retrowave', ['bus-drawing', 'bus-watercolor'], 'bus-result')" class="caption caption-active" id="bus-retrowave">
+                                        bus → <span style="color: steelblue">"a retrowave bus"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('skiing-wonder-woman', ['skiing-spiderman-beach', 'skiing-pink-sunset'], 'skiing-result')" class="caption" id="skiing-wonder-woman">
-                                        "Wonder Woman, wearing a cowboy hat, is skiing"</div>
+                                    <div onclick="toggle_prompt('bus-drawing', ['bus-retrowave', 'bus-watercolor'], 'bus-result')" class="caption" id="bus-drawing">
+                                        road + pavement + trees → <span style="color: steelblue">"a pencil drawing of a street"</span>
+                                        <br />
+                                        bus → <span style="color: steelblue">"a pencil drawing of a bus"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('skiing-pink-sunset', ['skiing-wonder-woman', 'skiing-spiderman-beach'], 'skiing-result')" class="caption" id="skiing-pink-sunset">
-                                        "A man, wearing pink clothes, is skiing at sunset"</div>
+                                    <div onclick="toggle_prompt('bus-watercolor', ['bus-retrowave', 'bus-drawing'], 'bus-result')" class="caption" id="bus-watercolor">
+                                        bus → <span style="color: steelblue">"a watercolor bus"</span></div>
                                 </div>
                             </div>
 
-                            <!-- Lion -->
+                            <!-- Car-Shadow -->
                             <div class="carousel-item">
                                 <div>
-                                    <img class="teaser-img" src="./assets/results/tuneavideo/lion-roaring/train.gif" />
+                                    <img class="teaser-img" src="./assets/data/gif/car-shadow.gif" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="lion-result" class="teaser-img" src="./assets/results/tuneavideo/lion-roaring/lion-vangogh.gif" />
+                                    <img id="car-shadow-result" class="teaser-img" src="./assets/data/gif/car-shadow_golden.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('lion-vangogh', ['lion-tiger', 'lion-wolf'], 'lion-result')" class="caption caption-active" id="lion-vangogh">
-                                        "A lion is roaring, Van Gogh style"</div>
+                                    <div onclick="toggle_prompt('car-shadow-golden', ['car-shadow-road', 'car-shadow-miyazaki'], 'car-shadow-result')" class="caption caption-active" id="car-shadow-golden">
+                                        car → <span style="color: steelblue">"a golden car"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('lion-tiger', ['lion-vangogh', 'lion-wolf'], 'lion-result')" class="caption" id="lion-tiger">
-                                        "A tiger is roaring"</div>
+                                    <div onclick="toggle_prompt('car-shadow-road', ['car-shadow-golden', 'car-shadow-miyazaki'], 'car-shadow-result')" class="caption" id="car-shadow-road">
+                                        road → <span style="color: steelblue">"a red paver block road"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('lion-wolf', ['lion-vangogh', 'lion-tiger'], 'lion-result')" class="caption" id="lion-wolf">
-                                        "A wolf is roaring in New York City"</div>
+                                    <div onclick="toggle_prompt('car-shadow-miyazaki', ['car-shadow-golden', 'car-shadow-road'], 'car-shadow-result')" class="caption" id="car-shadow-miyazaki">
+                                        road + pavement + buildings → <span style="color: steelblue">"a city street, Miyazaki style"</span>
+                                        <br />
+                                        car → <span style="color: steelblue">"a drawing of a car, Miyazaki style"</span></div>
                                 </div>
                             </div>
 
+                            <!-- Kite-surf -->
+                            <div class="carousel-item">
+                                <div>
+                                    <img class="teaser-img" src="./assets/data/gif/kite-surf.gif" />
+                                    <span style="font-size: 150%;">→</span>
+                                    <img id="kite-surf-result" class="teaser-img" src="./assets/data/gif/kite-surf_santa.gif" />
+                                </div>
+                                <br />
+                                <div>
+                                    <div onclick="toggle_prompt('kite-surf-santa', ['kite-surf-vangogh', 'kite-surf-fireman'], 'kite-surf-result')" class="caption caption-active" id="kite-surf-santa">
+                                        person → <span style="color: steelblue">"a santa"</span></div>
+                                    <br />
+                                    <div onclick="toggle_prompt('kite-surf-vangogh', ['kite-surf-santa', 'kite-surf-fireman'], 'kite-surf-result')" class="caption" id="kite-surf-vangogh">
+                                        mountains + sea + sky → <span style="color: steelblue">"sea with mountains in the background, Van Gogh style"</span></div>
+                                    <br />
+                                    <div onclick="toggle_prompt('kite-surf-fireman', ['kite-surf-santa', 'kite-surf-vangogh'], 'kite-surf-result')" class="caption" id="kite-surf-fireman">
+                                        mountains + sea + sky → <span style="color: steelblue">"a fire"</span>
+                                        <br />
+                                        person → <span style="color: steelblue">"a fireman"</span></div>
+                                </div>
+                            </div>
                         </div>
                         <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
-                            <div class="slider-navigation-previous">
+                            <div class="slider-navigation-previous" style="top: 45%">
                                 <svg viewBox="0 0 50 80" xml:space="preserve">
                                     <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
                                         stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 ">
@@ -192,7 +182,7 @@
                             <span class="sr-only">Previous</span>
                         </a>
                         <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
-                            <div class="slider-navigation-next">
+                            <div class="slider-navigation-next" style="top: 45%">
                                 <svg viewBox="0 0 50 80" xml:space="preserve">
                                     <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
                                         stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 ">
@@ -203,48 +193,187 @@
                         </a>
                     </div>
                 </tr>
-                <tr> <br /> </tr>
-                <tr align="center"></tr>
             </tbody>
         </table>
-        &nbsp;
-        <p class="section">&nbsp;</p>
-
         <p style="text-align: center;"><span class="section"><b>Abstract</b></span></p>
         <p style="text-align: justify; display: flex; justify-content: center; max-width: 800px; margin:auto"> 
-            We present a diffusion-based video editing framework, namely DiffusionAtlas, which can achieve both
-	    frame consistency and high fidelity in editing video object appearance. Despite the success in image
-	    editing, diffusion models still encounter significant hindrances when it comes to video editing due
-	    to the challenge of maintaining spatiotemporal consistency in the object's appearance across frames.
-	    On the other hand, atlas-based techniques allow propagating edits on the layered representations
-	    consistently back to frames. However, they often struggle to create editing effects that adhere correctly
-	    to the user-provided textual or visual conditions due to the limitation of editing the texture atlas on
-	    a fixed UV mapping field. Our method leverages a visual-textual diffusion model to edit objects directly
-	    on the diffusion atlases, ensuring coherent object identity across frames. We design a loss term with
-	    atlas-based constraints and build a pretrained text-driven diffusion model as pixel-wise guidance for
-	    refining shape distortions and correcting texture deviations. Qualitative and quantitative experiments
-	    show that our method outperforms state-of-the-art methods in achieving consistent high-fidelity video-object editing.
+            Recently, diffusion-based generative models have achieved remarkable success for image generation and edition. 
+            However, their use for video editing still faces important limitations. This paper introduces VidEdit, 
+            a novel method for zero-shot text-based video editing ensuring strong temporal and spatial consistency. 
+            Firstly, we propose to combine atlas-based and pre-trained text-to-image diffusion models to provide a training-free 
+            and efficient editing method, which by design fulfills temporal smoothness. Secondly, we leverage off-the-shelf panoptic segmenters
+             along with edge detectors and adapt their use for conditioned diffusion-based atlas editing. This ensures a fine spatial control on 
+             targeted regions while strictly preserving the structure of the original video. Quantitative and qualitative experiments show that VidEdit 
+             outperforms state-of-the-art methods on DAVIS dataset, regarding semantic faithfulness, image preservation, and temporal consistency metrics. 
+             With this framework, processing a single video only takes approximately one minute, and it can generate multiple compatible edits based on a unique text prompt.
         <p class="section">&nbsp;</p>
         
         <p class="section"><b>Method</b></p>
+        <br />
         <div style="text-align: center">
-            <img src="./assets/method.png" alt="" width="1080px" style="max-width: 100%; height: auto;" />
+            <img src="./assets/method/global-pipeline.png" alt="" width="1080px" style="max-width: 100%; height: auto;" />
         </div>
+        <br />
         <p style="text-align: justify">
-            Given a source video, a text prompt, and a reference image (e.g., “a purple minivan”), our method enables consistent video editing
-	    with high-fidelity output. We introduce the one-shot tuning mechanism for diffusion models to update the attention blocks for the
-	    source structure and to edit the objects directly on atlas textures. After getting the edited foreground atlas, we
-	    optimize the UV mappings using constraints exploited from the original UV space structures and a pretrained diffusion model to propagate
-	    edited atlas textures back to the frames more naturally.
+            An input video <b>(1)</b> is fed into NLA models which learn to decompose it into 2D atlases <b>(2)</b>. 
+            Depending on the object of interest, we select the corresponding atlas representation onto which we apply our editing diffusion pipeline <b>(3)</b>. 
+            The edited atlas is then mapped back to frames via a bilinear sampling from the associated pre-trained network <b>(4)</b>. 
+            Finally, the frame edit layers are composited over the original frames to obtain the desired edited video <b>(5)</b>.
         </p>
-	    
-	<div style="text-align: center">
-            <img src="./assets/uv_opt.png" alt="" width="1080px" style="max-width: 90%; height: auto;" />
+
+        <br />
+        <br />
+        
+        <div style="text-align: center">
+            <img src="./assets/method/VidEdit.png" alt="" width="1080px" style="max-width: 100%; height: auto;" />
+            <div class="caption">The three steps of our atlas editing procedure.</div>
         </div>
-	<p style="text-align: center">
-            UV mapping optimization process.
+        <br />
+        <p style="text-align: justify">
+
         </p>
         
+        <p class="section">&nbsp;</p>
+
+        <!--
+        <p class="section"><b>Results</b></p>
+        </br>
+        <div class="container" style="min-height: 224px">
+            <p style="text-align: center; font-size: 150%">Pretrained T2I (Stable Diffusion)</p>
+            <div id="resultCarousel1" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <table width="1080px" align="center">
+                            <tbody>
+                                <tr>
+                                    <th><img width="224" src="./assets/data/bear.gif" /></th>
+                                    <th><img width="224" src="./assets/results/tuneavideo/bear/bear.gif" /></th>
+                                    <th><img width="224" src="./assets/results/tuneavideo/bear/snow.gif" /></th>
+                                    <th><img width="224" src="./assets/results/tuneavideo/bear/cartoon.gif" /></th>
+                                </tr>
+                                <tr>
+                                    <th><div class="caption" style="width: 300px;">"A brown bear walking on some rocks"</div></th>
+                                    <th><div class="caption"><span style="color: steelblue"><del>on some rocks</del></span></div></th>
+                                    <th><div class="caption">some rocks → <span style="color: steelblue">snow</span></div></th>
+                                    <th><div class="caption"><span style="color: steelblue">+ cartoon style</span></div></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="carousel-item">
+                        <table width="1080px" align="center">
+                            <tbody>
+                                <tr>
+                                    <th><img width="224" src="./assets/data/mbike-santa.gif" /></th>
+                                    <th><img width="224" src="./assets/results/tuneavideo/mbike-santa/spider-man.gif" /></th>
+                                    <th><img width="224" src="./assets/results/tuneavideo/mbike-santa/sleigh-car.gif" /></th>
+                                    <th><img width="224" src="./assets/results/tuneavideo/mbike-santa/cartoon.gif" /></th>
+                                </tr>
+                                <tr>
+                                    <th><div class="caption" style="width: 300px;">"A man dressed as Santa Claus riding a motorcycle"</div></th>
+                                    <th><div class="caption">Santa Claus → <span style="color: steelblue">Spider Man</span></div></th>
+                                    <th><div class="caption">motorcycle → <span style="color: steelblue">sleigh car</div></th>
+                                    <th><div class="caption"><span style="color: steelblue">+ cartoon style</span></div></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="carousel-item">
+                        <table width="1080px" align="center">
+                            <tbody>
+                                <tr>
+                                    <th><img width="224" src="./assets/data/drift-turn.gif" /></th>
+                                    <th><img width="224" src="./assets/results/tuneavideo/drift-turn/smoke.gif" /></th>
+                                    <th><img width="224" src="./assets/results/tuneavideo/drift-turn/van.gif" /></th>
+                                    <th><img width="224" src="./assets/results/tuneavideo/drift-turn/desert.gif" /></th>
+                                </tr>
+                                <tr>
+                                    <th><div class="caption" style="width: 300px;">"A car is drifting on a track with smoke coming out of it"</div></th>
+                                    <th><div class="caption"><span style="color: steelblue"><del>with smoke out of it</del></span></div></th>
+                                    <th><div class="caption">car → <span style="color: steelblue">white van</div></th>
+                                    <th><div class="caption">track → <span style="color: steelblue">desert</div></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#resultCarousel1" role="button" data-slide="prev">
+                    <div class="slider-navigation-previous" style="top: 40%">
+                        <svg viewBox="0 0 50 80" xml:space="preserve">
+                            <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
+                                stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 ">
+                            </polyline>
+                        </svg>
+                    </div>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#resultCarousel1" role="button" data-slide="next">
+                    <div class="slider-navigation-next" style="top: 40%">
+                        <svg viewBox="0 0 50 80" xml:space="preserve">
+                            <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
+                                stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 ">
+                            </polyline>
+                        </svg>
+                    </div>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        </br>
+                </div>
+
+                <a class="carousel-control-prev" href="#resultCarousel2" role="button" data-slide="prev">
+                    <div class="slider-navigation-previous" style="top: 65%">
+                        <svg viewBox="0 0 50 80" xml:space="preserve">
+                            <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
+                                stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 ">
+                            </polyline>
+                        </svg>
+                    </div>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#resultCarousel2" role="button" data-slide="next">
+                    <div class="slider-navigation-next" style="top: 65%">
+                        <svg viewBox="0 0 50 80" xml:space="preserve">
+                            <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
+                                stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 ">
+                            </polyline>
+                        </svg>
+                    </div>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+                <a class="carousel-control-prev" href="#resultCarousel3" role="button" data-slide="prev">
+                    <div class="slider-navigation-previous" style="top: 65%">
+                        <svg viewBox="0 0 50 80" xml:space="preserve">
+                            <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
+                                stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 ">
+                            </polyline>
+                        </svg>
+                    </div>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#resultCarousel3" role="button" data-slide="next">
+                    <div class="slider-navigation-next" style="top: 65%">
+                        <svg viewBox="0 0 50 80" xml:space="preserve">
+                            <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
+                                stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 ">
+                            </polyline>
+                        </svg>
+                    </div>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>-->
+
+
         <p class="section">&nbsp;</p>
 
         <!-- <p class="section" id="paper"><b>Paper</b></p>
@@ -277,6 +406,30 @@
             </tbody>
         </table>
         <p class="section">&nbsp;</p> -->
+
+        <p class="section" id="bibtex"><b>Bibtex</b></p>
+        <table border="0">
+            <tbody>
+                <pre style=" display: block;
+                    background: #eee;
+                    white-space: pre;
+                    -webkit-overflow-scrolling: touch;
+                    max-width: 100%;
+                    min-width: 100px;
+                    border-radius: 20px;
+                    ">
+
+    @article{couairon2023videdit,
+        title={VidEdit: Zero-Shot and Spatially Aware Text-Driven Video Editing}, 
+        author={Paul Couairon and Clément Rambour and Jean-Emmanuel Haugeard and Nicolas Thome},
+        year={2023},
+        eprint={2306.08707},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+    }       
+			    </pre>
+            </tbody>
+        </table>
         
     </div>
 
