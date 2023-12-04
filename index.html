@@ -94,23 +94,22 @@
                                 </div>
                             </div>
 
-                            <!-- Car -->
-                            <div class="carousel-item">
+                            <!-- paragliding -->
+                            <div class="carousel-item active">
                                 <div>
-                                    <img class="teaser-img" src="./assets/data/car-turn.gif" />
+                                    <img class="teaser-img" src="./assets/data/paragliding.gif" />
+				    <span style="font-size: 150%;">+</span>
+				    <img class="teaser-img" id="paragliding-ref" src="./assets/reference/paragliding/hot_air_balloon.png" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="car-result" class="teaser-img" src="./assets/results/tuneavideo/car-turn/car-cartoon.gif" />
+                                    <img id="paragliding-result" class="teaser-img" src="./assets/results/paragliding/autumn_hot_air_v2.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('car-moving-cartoon', ['car-moving-porsche', 'car-moving-snow'], 'car-result')" class="caption caption-active" id="car-moving-cartoon">
-                                        "A jeep car is moving on the road, cartoon style"</div>
+                                    <div onclick="toggle_prompt('paragliding-hotair', ['paragliding-balloon'], 'paragliding-result')" class="caption caption-active" id="paragliding-hotair">
+                                        "<span style="color: crimson">A hot air balloon</span> is flying above <span style="color: steelblue">a village in autumn</span>."</div>
                                     <br />
-                                    <div onclick="toggle_prompt('car-moving-porsche', ['car-moving-cartoon', 'car-moving-snow'], 'car-result')" class="caption" id="car-moving-porsche">
-                                        "A Porsche car is moving on the beach"</div>
-                                    <br />
-                                    <div onclick="toggle_prompt('car-moving-snow', ['car-moving-cartoon', 'car-moving-porsche'], 'car-result')" class="caption" id="car-moving-snow">
-                                        "A jeep car is moving on the snow"</div>
+                                    <div onclick="toggle_prompt('paragliding-balloon', ['paragliding-hotair'], 'paragliding-result')" class="caption" id="paragliding-balloon">
+                                        "<span style="color: crimson">A man holding balloons</span> is flying above <span style="color: steelblue">Ney York City</span>."</div>
                                 </div>
                             </div>
 
