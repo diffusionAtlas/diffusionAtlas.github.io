@@ -65,18 +65,18 @@
                                     <span style="font-size: 150%;">+</span>
                                     <img id="ikun-ref" class="teaser-img" src="./assets/reference/boat/yacht.png" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="ikun-result" class="teaser-img" src="./assets/results/boat/boat_yacht.gif" />
+                                    <img id="boat-result" class="teaser-img" src="./assets/results/boat/boat_yacht.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('boat-yacht', ['car-turn-flowers', 'car-turn-autumn'], 'car-turn-result')" class="caption caption-active" id="car-turn-rusty">
-                                        car → <span style="color: steelblue">"a rusty jeep"</span></div>
+                                    <div onclick="toggle_prompt('boat-yacht', ['boat-warshipCartoon', 'boat-yellowYacht'], 'boat-result')" class="caption caption-active" id="boat-yacht">
+                                        a boat → <span style="color: crimson">"a yacht"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('car-turn-flowers', ['car-turn-rusty', 'car-turn-autumn'], 'car-turn-result')" class="caption" id="car-turn-flowers">
-                                        grass → <span style="color: steelblue">"a wildflower field"</span></div>
+                                    <div onclick="toggle_prompt('boat-yellowYacht', ['warshipCartoon.gif', 'boat-yacht'], 'boat-result')" class="caption" id="boat-yellowYacht">
+                                        a boat → <span style="color: crimson">"a yellow yacht"</span>, a river → <span style="color: steelblue">"a river in bad weather"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('car-turn-autumn', ['car-turn-rusty', 'car-turn-flowers'], 'car-turn-result')" class="caption" id="car-turn-autumn">
-                                        mountains + trees + grass → <span style="color: steelblue">"a landscape in autumn"</span></div>
+                                    <div onclick="toggle_prompt('boat-warshipCartoon', ['boat-yacht', 'boat-yellowYacht'], 'boat-result')" class="caption" id="boat-warshipCartoon">
+                                        a boat → <span style="color: crimson">"a gray warship"</span>, a river → <span style="color: steelblue">"a river in battlefield, cartoon style"</span></div>
 				</div>
                             </div>
 
