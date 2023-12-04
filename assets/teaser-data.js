@@ -12,4 +12,6 @@ file_paths = {
     "car-turn-alps": "./assets/results/paragliding/alps_suzuki.gif",
     "car-turn-snow": "./assets/results/paragliding/snowy_suzuki.gif",
     "car-turn-minivan": "./assets/results/paragliding/snowy_minivan.gif",
+
+    "blackswan-whiteswan": "./assets/results/blackswan/whiteswan.gif",
 }
