@@ -57,19 +57,21 @@
                             <div class="carousel-item active">
                                 <div>
                                     <img class="teaser-img" src="./assets/data/boat.gif" />
+				    <span style="font-size: 150%;">+</span>
+				    <img class="teaser-img" src="./assets/reference/boat/yacht.png" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="rabbit-result" class="teaser-img" src="./assets/results/tuneavideo/rabbit-watermelon/puppy.gif" />
+                                    <img id="boat-result" class="teaser-img" src="./assets/results/boat/yacht.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('rabbit-puppy', ['rabbit-alone', 'rabbit-cat'], 'rabbit-result')" class="caption caption-active" id="rabbit-puppy">
-                                        "A puppy is eating a cheeseburger on the table, comic style"</div>
+                                    <div onclick="toggle_prompt('boat-yacht', ['boat-warshipCartoon', 'boat-yellowYacht'], 'boat-result')" class="caption caption-active" id="boat-yacht">
+                                        "<span style="color: crimson">A yacht</span> is sailing on a river."</div>
                                     <br />
-                                    <div onclick="toggle_prompt('rabbit-cat', ['rabbit-alone', 'rabbit-puppy'], 'rabbit-result')" class="caption" id="rabbit-cat">
-                                        "A cat with sunglasses is eating a watermelon on the beach"</div>
+                                    <div onclick="toggle_prompt('boat-yellowYacht', ['boat-warshipCartoon', 'boat-yacht'], 'boat-result')" class="caption" id="boat-yellowYacht">
+                                        "<span style="color: crimson">A yellow yacht</span> is sailing on <span style="color: crimson">a river in a bad weather</span>."</div>
                                     <br />
-                                    <div onclick="toggle_prompt('rabbit-alone', ['rabbit-puppy', 'rabbit-cat'], 'rabbit-result')" class="caption" id="rabbit-alone">
-                                        "A rabbit is <del>eating a watermelon</del> on the table"</div>
+                                    <div onclick="toggle_prompt('boat-warshipCartoon', ['boat-yacht', 'boat-yellowYacht'], 'boat-result')" class="caption" id="boat-warshipCartoon">
+                                        "<span style="color: crimson">A warship</span> is sailing on <span style="color: crimson">a battlefield, cartoon style</span>."</div>
                                 </div>
                             </div>
                             
