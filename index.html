@@ -113,23 +113,25 @@
                                 </div>
                             </div>
 
-                            <!-- Skiing -->
-                            <div class="carousel-item">
+                            <!-- car-turn -->
+                            <div class="carousel-item active">
                                 <div>
-                                    <img class="teaser-img" src="./assets/results/tuneavideo/man-skiing/train.gif" />
+                                    <img class="teaser-img" src="./assets/data/car-turn.gif" />
+				    <span style="font-size: 150%;">+</span>
+				    <img class="teaser-img" id="car-turn-ref" src="./assets/reference/car-turn/minivan.png" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="skiing-result" class="teaser-img" src="./assets/results/tuneavideo/man-skiing/spiderman-beach.gif" />
+                                    <img id="car-turn-result" class="teaser-img" src="./assets/results/car-turn/alps_suzuki.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('skiing-spiderman-beach', ['skiing-wonder-woman', 'skiing-pink-sunset'], 'skiing-result')" class="caption caption-active" id="skiing-spiderman-beach">
-                                        “Spider Man is skiing on the beach, cartoon style”</div>
+                                    <div onclick="toggle_prompt('car-turn-alps', ['car-turn-snow', 'car-turn-minivan'], 'car-turn-result')" class="caption caption-active" id="car-turn-alps">
+                                        "A grey suzuki jimny is driving down <span style="color: steelblue">a road in Alps</span>."</div>
                                     <br />
-                                    <div onclick="toggle_prompt('skiing-wonder-woman', ['skiing-spiderman-beach', 'skiing-pink-sunset'], 'skiing-result')" class="caption" id="skiing-wonder-woman">
-                                        "Wonder Woman, wearing a cowboy hat, is skiing"</div>
-                                    <br />
-                                    <div onclick="toggle_prompt('skiing-pink-sunset', ['skiing-wonder-woman', 'skiing-spiderman-beach'], 'skiing-result')" class="caption" id="skiing-pink-sunset">
-                                        "A man, wearing pink clothes, is skiing at sunset"</div>
+                                    <div onclick="toggle_prompt('car-turn-snow', ['car-turn-alps', 'car-turn-minivan'], 'car-turn-result')" class="caption" id="car-turn-snow">
+                                        "A grey suzuki jimny is driving down <span style="color: steelblue">a snowy road</span>."</div>
+				    <br />
+                                    <div onclick="toggle_prompt('car-turn-minivan', ['car-turn-alps', 'car-turn-snow'], 'car-turn-result')" class="caption" id="car-turn-minivan">
+                                        "<span style="color: crimson">A purple minivan</span> is driving down <span style="color: steelblue">a snowy road</span>."</div>
                                 </div>
                             </div>
 
