@@ -65,13 +65,13 @@
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('boat-yacht-ref', ['boat-warship-ref', 'boat-yellowYacht-ref'], 'boat-ref');toggle_prompt('boat-yacht', ['boat-warshipCartoon', 'boat-yellowYacht'], 'boat-result');" class="caption caption-active" id="boat-yacht">
+                                    <div onclick="toggle('boat-yacht-ref', ['boat-warship-ref', 'boat-yellowYacht-ref'], 'boat-ref', 'boat-yacht', ['boat-warshipCartoon', 'boat-yellowYacht'], 'boat-result')" class="caption caption-active" id="boat-yacht">
                                         "<span style="color: crimson">A yacht</span> is sailing on a river."</div>
                                     <br />
-                                    <div onclick="toggle_prompt('boat-yellowYacht-ref', ['boat-warship-ref', 'boat-yacht-ref'], 'boat-ref');toggle_prompt('boat-yellowYacht', ['boat-warshipCartoon', 'boat-yacht'], 'boat-result');" class="caption" id="boat-yellowYacht">
+                                    <div onclick="toggle('boat-yellowYacht-ref', ['boat-warship-ref', 'boat-yacht-ref'], 'boat-ref', 'boat-yellowYacht', ['boat-warshipCartoon', 'boat-yacht'], 'boat-result')" class="caption" id="boat-yellowYacht">
                                         "<span style="color: crimson">A yellow yacht</span> is sailing on <span style="color: steelblue">a river in a bad weather</span>."</div>
                                     <br />
-                                    <div onclick="toggle_prompt('boat-warship-ref', ['boat-yacht-ref', 'boat-yellowYacht-ref'], 'boat-ref');toggle_prompt('boat-warshipCartoon', ['boat-yacht', 'boat-yellowYacht'], 'boat-result');" class="caption" id="boat-warshipCartoon">
+                                    <div onclick="toggle('boat-warship-ref', ['boat-yellowYacht-ref', 'boat-yacht-ref'], 'boat-ref', 'boat-warshipCartoon', ['boat-yellowYacht', 'boat-yacht'], 'boat-result')" class="caption" id="boat-warshipCartoon">
                                         "<span style="color: crimson">A warship</span> is sailing on <span style="color: steelblue">a battlefield, cartoon style</span>."</div>
                                 </div>
                             </div>
@@ -278,6 +278,11 @@
 
     function prompt_off(prompt_element) {
         prompt_element.classList.remove("caption-active");
+    }
+
+    function toggle(active_prompt_id, inactive_prompt_ids, result_id, active_prompt_ref_id, inactive_prompt_ref_ids, result_ref_id) {
+	    toggle_prompt(active_prompt_id, inactive_prompt_ids, result_id)
+	    toggle_prompt(active_prompt_ref_id, inactive_prompt_ref_ids, result_ref_id)
     }
 
     function toggle_prompt(active_prompt_id, inactive_prompt_ids, result_id) {
