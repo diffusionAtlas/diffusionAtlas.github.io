@@ -275,3 +275,7 @@ code {
 .teaser-img {
     width: 450px !important;
 }
+
+.teaser-img-ref {
+    width: 200px !important;
+}
