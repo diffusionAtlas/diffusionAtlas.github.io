@@ -80,8 +80,8 @@ sup {
 }
 
 .container {
-	width: 1080px;
-	min-height: 1080px;
+	width: 1920px;
+	min-height: 900px;
 	max-height: 999999px; /* prevents font boosting */
 	margin: 0 auto; /* top and bottom, right and left */
 	/*	border: 1px solid #000; */
@@ -201,7 +201,7 @@ code {
  text-align: center;
  }
  .carousel-item img {
- /* width: 100%; */
+/* width: 100%; */
  }
  .carousel-inner .item img {
  margin:auto;
@@ -225,7 +225,7 @@ code {
  border-radius:25091983px;
  box-shadow:0 2px 5px #3232321a;
  top:50%;
- margin-top:-20px;
+ margin-top:-30px;
  left:0;
  cursor:pointer;
  transition:transform .3s,opacity .3s,-webkit-transform .3s
@@ -242,9 +242,9 @@ code {
  }
 
  .teaser-carousel {
-    width: 670px;
+    width: 1000px;
     margin: auto;
-    height: 400px;
+    height: 470px;
  }
 
  .caption {
@@ -273,5 +273,5 @@ code {
 
 
 .teaser-img {
-    width: 300px !important;
+    width: 450px !important;
 }
