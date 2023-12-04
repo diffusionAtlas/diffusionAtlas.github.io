@@ -6,22 +6,18 @@
 <style>
     @import url('https://fonts.cdnfonts.com/css/caveat');
 </style>
-<!-- <script src="./assets/teaser-data.js"></script> -->
+<script src="./assets/teaser-data.js"></script>
 
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>diffusionAtlas</title>
+    <title>Tune-A-Video</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta name="description"
         content="Project page for &#39;DiffusionAtlas: High-Fidelity Consistent Diffusion Video Editing.&#39;">
-    <!-- <link rel="icon" href="./assets/showlab.ico"> -->
+    <link rel="icon" href="./assets/showlab.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
-
-    </style>
-
 </head>
 
 <body>
@@ -57,117 +53,103 @@
                 <tr>
                     <div id="imageCarousel" class="carousel slide teaser-carousel" data-ride="carousel" data-interval="5000">
                         <div class="carousel-inner">
-				
                             <!-- Boat -->
                             <div class="carousel-item active">
                                 <div>
                                     <img class="teaser-img" src="./assets/data/boat.gif" />
-				    <span style="font-size: 150%;">+</span>
-                                    <img id="huaqiang-ref" class="teaser-img" src="./assets/reference/boat/yacht.png" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="boat-result" class="teaser-img" src="./assets/results/boat/yacht.gif" />
+                                    <img id="rabbit-result" class="teaser-img" src="./assets/results/tuneavideo/rabbit-watermelon/puppy.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('boat-yacht', ['boat-warshipCartoon', 'boat-yellowYacht'], 'boat-result')" class="caption caption-active" id="boat-yacht">
-                                        <span style="color: crimson">"A yacht"</span> is sailing on a river</div>
+                                    <div onclick="toggle_prompt('rabbit-puppy', ['rabbit-alone', 'rabbit-cat'], 'rabbit-result')" class="caption caption-active" id="rabbit-puppy">
+                                        "A puppy is eating a cheeseburger on the table, comic style"</div>
                                     <br />
-                                    <div onclick="toggle_prompt('boat-yellowYacht', ['boat-warshipCartoon', 'boat-yacht'], 'boat-result')" class="caption" id="boat-yellowYacht">
-                                        <span style="color: crimson">"A yellow yacht"</span> is sailing on <span style="color: steelblue">a river in a bad weather</span></div>
+                                    <div onclick="toggle_prompt('rabbit-cat', ['rabbit-alone', 'rabbit-puppy'], 'rabbit-result')" class="caption" id="rabbit-cat">
+                                        "A cat with sunglasses is eating a watermelon on the beach"</div>
                                     <br />
-                                    <div onclick="toggle_prompt('boat-warshipCartoon', ['boat-yacht', 'boat-yellowYacht'], 'boat-result')" class="caption" id="boat-warshipCartoon">
-                                        <span style="color: crimson">"A warship"</span> is sailing on <span style="color: steelblue">a river in battlefield, cartoon style</span></div>
+                                    <div onclick="toggle_prompt('rabbit-alone', ['rabbit-puppy', 'rabbit-cat'], 'rabbit-result')" class="caption" id="rabbit-alone">
+                                        "A rabbit is <del>eating a watermelon</del> on the table"</div>
                                 </div>
                             </div>
-
+                            
+                            <!-- Basketball -->
                             <div class="carousel-item">
                                 <div>
-                                    <img class="teaser-img" src="./assets/data/huaqiang.gif" />
-                                    <span style="font-size: 150%;">+</span>
-                                    <img id="huaqiang-ref" class="teaser-img" src="./assets/reference/huaqiang/musk.jpg" />
+                                    <img class="teaser-img" src="./assets/data/man-basketball.gif" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="huaqiang-result" class="teaser-img" src="./assets/results/huaqiang/huaqiang-musk.gif" />
+                                    <img id="basketball-result" class="teaser-img" src="./assets/results/tuneavideo/man-basketball/lego.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    
-                                    <div class="caption" id="huaqiang-musk">
-                                        "<span style="color: darkred">Elon Musk</span> walking down the street"
-                                    </div>
-                                    
+                                    <div onclick="toggle_prompt('basketball-lego', ['basketball-bond', 'basketball-astronaut'], 'basketball-result')" class="caption caption-active" id="basketball-lego">
+                                        "A lego man in a black suit is dribbling a basketball"</div>
+                                    <br />
+                                    <div onclick="toggle_prompt('basketball-bond', ['basketball-lego', 'basketball-astronaut'], 'basketball-result')" class="caption" id="basketball-bond">
+                                        "James Bond is dribbling a basketball on the beach"</div>
+                                    <br />
+                                    <div onclick="toggle_prompt('basketball-astronaut', ['basketball-lego', 'basketball-bond'], 'basketball-result')" class="caption" id="basketball-astronaut">
+                                        "An astronaut is dribbling a basketball, cartoon style"</div>
                                 </div>
                             </div>
 
-
-                            <div class="carousel-item">
-                                <div>
-                                    <img class="teaser-img" src="./assets/data/yanzi.gif" />
-                                    <span style="font-size: 150%;">+</span>
-                                    <img id="yanzi-ref" class="teaser-img" src="./assets/reference/yanzi/panda.jpeg" />
-                                    <span style="font-size: 150%;">→</span>
-                                    <img id="yanzi-result" class="teaser-img" src="./assets/results/yanzi/panda.gif" />
-                                </div>
-                                <br />
-                                <div>
-                                    
-                                    <div class="caption" id="yanzi-panda">
-                                        "A <span style="color: darkred">panda</span> walking down <span style="color: steelblue">the snowy street</span>"
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div>
-                                    <img class="teaser-img" src="./assets/data/man-dance.gif" />
-                                    <span style="font-size: 150%;">+</span>
-                                    <img id="huaqiang-ref" class="teaser-img" src="./assets/reference/man-dance/peng.png" />
-                                    <span style="font-size: 150%;">→</span>
-                                    <img id="huaqiang-result" class="teaser-img" src="./assets/results/man-dance/man-dance-peng.gif" />
-                                </div>
-                                <br />
-                                <div>
-                                    
-                                    <div class="caption" id="man-dance-peng">
-                                        "A <span style="color: darkred">man</span>  <span style="color: steelblue">in dark blue suit with white shirt</span> dancing <span style="color: steelblue">on the beach</span>"
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div>
-                                    <img class="teaser-img" src="./assets/data/girl-dance.gif" />
-                                    <span style="font-size: 150%;">+</span>
-                                    <img id="huaqiang-ref" class="teaser-img" src="./assets/reference/girl-dance/beel.jpeg" />
-                                    <span style="font-size: 150%;">→</span>
-                                    <img id="huaqiang-result" class="teaser-img" src="./assets/results/girl-dance/girl-dance-beel.gif" />
-                                </div>
-                                <br />
-                                <div>
-                                    
-                                    <div class="caption" id="girl-dance-beel">
-                                        "A <span style="color: darkred">girl</span> dancing <span style="color: steelblue">on the beach, anime style</span>"
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
+                            <!-- Car -->
                             <div class="carousel-item">
                                 <div>
                                     <img class="teaser-img" src="./assets/data/car-turn.gif" />
-                                    <span style="font-size: 150%;">+</span>
-                                    <img id="drift-ref" class="teaser-img" src="./assets/reference/car-turn/0000.jpg" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="drift-result" class="teaser-img" src="./assets/results/car-turn/sj-rain.gif" />
+                                    <img id="car-result" class="teaser-img" src="./assets/results/tuneavideo/car-turn/car-cartoon.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    
-                                    <div class="caption" id="drift-night">
-                                        "A <span style="color: darkred">Suzuki Jimny</span> driving down a mountain road <span style="color: steelblue">in the rain</span>"
-                                    </div>
-                                    
+                                    <div onclick="toggle_prompt('car-moving-cartoon', ['car-moving-porsche', 'car-moving-snow'], 'car-result')" class="caption caption-active" id="car-moving-cartoon">
+                                        "A jeep car is moving on the road, cartoon style"</div>
+                                    <br />
+                                    <div onclick="toggle_prompt('car-moving-porsche', ['car-moving-cartoon', 'car-moving-snow'], 'car-result')" class="caption" id="car-moving-porsche">
+                                        "A Porsche car is moving on the beach"</div>
+                                    <br />
+                                    <div onclick="toggle_prompt('car-moving-snow', ['car-moving-cartoon', 'car-moving-porsche'], 'car-result')" class="caption" id="car-moving-snow">
+                                        "A jeep car is moving on the snow"</div>
+                                </div>
+                            </div>
+
+                            <!-- Skiing -->
+                            <div class="carousel-item">
+                                <div>
+                                    <img class="teaser-img" src="./assets/results/tuneavideo/man-skiing/train.gif" />
+                                    <span style="font-size: 150%;">→</span>
+                                    <img id="skiing-result" class="teaser-img" src="./assets/results/tuneavideo/man-skiing/spiderman-beach.gif" />
+                                </div>
+                                <br />
+                                <div>
+                                    <div onclick="toggle_prompt('skiing-spiderman-beach', ['skiing-wonder-woman', 'skiing-pink-sunset'], 'skiing-result')" class="caption caption-active" id="skiing-spiderman-beach">
+                                        “Spider Man is skiing on the beach, cartoon style”</div>
+                                    <br />
+                                    <div onclick="toggle_prompt('skiing-wonder-woman', ['skiing-spiderman-beach', 'skiing-pink-sunset'], 'skiing-result')" class="caption" id="skiing-wonder-woman">
+                                        "Wonder Woman, wearing a cowboy hat, is skiing"</div>
+                                    <br />
+                                    <div onclick="toggle_prompt('skiing-pink-sunset', ['skiing-wonder-woman', 'skiing-spiderman-beach'], 'skiing-result')" class="caption" id="skiing-pink-sunset">
+                                        "A man, wearing pink clothes, is skiing at sunset"</div>
+                                </div>
+                            </div>
+
+                            <!-- Lion -->
+                            <div class="carousel-item">
+                                <div>
+                                    <img class="teaser-img" src="./assets/results/tuneavideo/lion-roaring/train.gif" />
+                                    <span style="font-size: 150%;">→</span>
+                                    <img id="lion-result" class="teaser-img" src="./assets/results/tuneavideo/lion-roaring/lion-vangogh.gif" />
+                                </div>
+                                <br />
+                                <div>
+                                    <div onclick="toggle_prompt('lion-vangogh', ['lion-tiger', 'lion-wolf'], 'lion-result')" class="caption caption-active" id="lion-vangogh">
+                                        "A lion is roaring, Van Gogh style"</div>
+                                    <br />
+                                    <div onclick="toggle_prompt('lion-tiger', ['lion-vangogh', 'lion-wolf'], 'lion-result')" class="caption" id="lion-tiger">
+                                        "A tiger is roaring"</div>
+                                    <br />
+                                    <div onclick="toggle_prompt('lion-wolf', ['lion-vangogh', 'lion-tiger'], 'lion-result')" class="caption" id="lion-wolf">
+                                        "A wolf is roaring in New York City"</div>
                                 </div>
                             </div>
 
@@ -216,13 +198,12 @@
 	    refining shape distortions and correcting texture deviations. Qualitative and quantitative experiments
 	    show that our method outperforms state-of-the-art methods in achieving consistent high-fidelity video-object editing.
         <p class="section">&nbsp;</p>
-
+        
         <p class="section"><b>Method</b></p>
         <div style="text-align: center">
             <img src="./assets/method.png" alt="" width="800px" style="max-width: 100%; height: auto;" />
         </div>
-        </br>
-	<p style="text-align: justify">
+        <p style="text-align: justify">
             Given a source video, a text prompt, and a reference image (e.g., “a purple minivan”), our method enables consistent video editing
 	    with high-fidelity output. We introduce the one-shot tuning mechanism for diffusion models to update the attention blocks for the
 	    source structure and to edit the objects directly on atlas textures. After getting the edited foreground atlas, we
@@ -235,8 +216,7 @@
         <p style="text-align: center">
             <em>UV mapping optimization process.</em>
         </p>
-
-	    
+        
         <p class="section">&nbsp;</p>
 
         <p class="section" id="bibtex"><b>Bibtex</b></p>
@@ -256,7 +236,7 @@
         author={Chang, Shao-Yu and Chen, Hwann-Tzong and Liu, Tyng-Luh},
         journal={arXiv preprint arXiv:2305.08850},
         year={2023}
-    }       
+    }        
 			    </pre>
             </tbody>
         </table>
@@ -314,13 +294,6 @@
         let result = document.getElementById(result_id);
         result.src = file_paths[active_prompt_id];
     }
-
-    function toggle_prompts(active_prompt_id1, active_prompt_id2, inactive_prompt_ids1, inactive_prompt_ids2, result_id1, result_id2 ) {
-    toggle_prompt(active_prompt_id1, inactive_prompt_ids1, result_id1);
-    toggle_prompt(active_prompt_id2, inactive_prompt_ids2, result_id2);
-    }
-
-
  </script>
 
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
