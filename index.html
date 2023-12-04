@@ -57,23 +57,27 @@
                 <tr>
                     <div id="imageCarousel" class="carousel slide teaser-carousel" data-ride="carousel" data-interval="5000">
                         <div class="carousel-inner">
-                            <!-- Basketball -->
+				
+                            <!-- boat -->
                             <div class="carousel-item active">
                                 <div>
-                                    <img class="teaser-img" src="./assets/data/ikun.gif" />
+                                    <img class="teaser-img" src="./assets/data/boat.gif" />
                                     <span style="font-size: 150%;">+</span>
-                                    <img id="ikun-ref" class="teaser-img" src="./assets/reference/ikun/zhongli.jpg" />
+                                    <img id="ikun-ref" class="teaser-img" src="./assets/reference/boat/yacht.png" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="ikun-result" class="teaser-img" src="./assets/results/ikun/ikun-beach.gif" />
+                                    <img id="ikun-result" class="teaser-img" src="./assets/results/boat/bad_weather_yacht.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    
-                                    <div class="caption" id="ikun-beach">
-                                        "A <span style="color: darkred">man</span> playing basketball <span style="color: steelblue">on the beach, anime style</span>"
-                                    </div>
-                                    
-                                </div>
+                                    <div onclick="toggle_prompt('car-turn-rusty', ['car-turn-flowers', 'car-turn-autumn'], 'car-turn-result')" class="caption caption-active" id="car-turn-rusty">
+                                        car → <span style="color: steelblue">"a rusty jeep"</span></div>
+                                    <br />
+                                    <div onclick="toggle_prompt('car-turn-flowers', ['car-turn-rusty', 'car-turn-autumn'], 'car-turn-result')" class="caption" id="car-turn-flowers">
+                                        grass → <span style="color: steelblue">"a wildflower field"</span></div>
+                                    <br />
+                                    <div onclick="toggle_prompt('car-turn-autumn', ['car-turn-rusty', 'car-turn-flowers'], 'car-turn-result')" class="caption" id="car-turn-autumn">
+                                        mountains + trees + grass → <span style="color: steelblue">"a landscape in autumn"</span></div>
+				</div>
                             </div>
 
                             <div class="carousel-item">
