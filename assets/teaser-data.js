@@ -9,9 +9,9 @@ file_paths = {
     "paragliding-hotair": "./assets/results/paragliding/autumn_hot_air_v2.gif",
     "paragliding-balloon": "./assets/results/paragliding/city_balloon.gif",
 
-    "car-turn-alps": "./assets/results/paragliding/alps_suzuki.gif",
-    "car-turn-snow": "./assets/results/paragliding/snowy_suzuki.gif",
-    "car-turn-minivan": "./assets/results/paragliding/snowy_minivan.gif",
+    "car-turn-alps": "./assets/results/car-turn/alps_suzuki.gif",
+    "car-turn-snow": "./assets/results/car-turn/snowy_suzuki.gif",
+    "car-turn-minivan": "./assets/results/car-turn/snowy_minivan.gif",
 
     "blackswan-whiteswan": "./assets/results/blackswan/whiteswan.gif",
 }
