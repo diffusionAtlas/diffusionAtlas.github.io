@@ -15,9 +15,4 @@ file_paths = {
     "car-turn-snowy": "./assets/results/car-turn/snowy_minivan.gif",
 
     "blackswan-whiteswan": "./assets/results/blackswan/whiteswan.gif",
-
-
-    "boat-yacht-ref": "./assets/reference/boat/yacht.png",
-    "boat-yellowYacht-ref": "./assets/reference/boat/yellow_yacht.png",
-    "boat-warship-ref": "./assets/reference/boat/warship.png",
 }
