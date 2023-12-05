@@ -11,8 +11,8 @@ file_paths = {
     "paragliding-balloon": "./assets/results/paragliding/city_balloon.gif",
 
     "car-turn-alps": "./assets/results/car-turn/alps_suzuki.gif",
-    "car-turn-desert": "./assets/results/car-turn/desert_suzuki.gif",
-    "car-turn-minivan": "./assets/results/car-turn/snowy_minivan.gif",
+    "car-turn-minivan": "./assets/results/car-turn/minivan.gif",
+    "car-turn-snowy": "./assets/results/car-turn/snowy_minivan.gif",
 
     "blackswan-whiteswan": "./assets/results/blackswan/whiteswan.gif",
 
