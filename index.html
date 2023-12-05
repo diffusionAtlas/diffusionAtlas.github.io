@@ -102,7 +102,7 @@
                                 </div>
                             </div>
 
-                            <!-- paragliding -->
+			    <!-- paragliding -->
                             <div class="carousel-item">
                                 <div>
                                     <img class="teaser-img" src="./assets/data/paragliding.gif" />
@@ -111,15 +111,15 @@
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('paragliding-autumn', ['paragliding-hotair', 'paragliding-balloon'], 'paragliding-result')" class="caption caption-active" id="'paragliding-autumn'">
+                                    <div onclick="toggle_prompt('paragliding-autumn', ['paragliding-hotair', 'paragliding-balloon'], 'paragliding-result')" class="caption caption-active" id="paragliding-autumn">
                                         <img class="teaser-img-ref" id="ref-paragliding" src="./assets/reference/paragliding/paraglider.jpg" />
 				        <p style="text-align: justify; max-width: 200px; margin:auto">
 					    "a man with a paraglider is flying above <span style="color: steelblue">a village in autumn</span>."</p></div>
-				    <div onclick="toggle_prompt('paragliding-hotair', ['paragliding-balloon', 'paragliding-autumn'], 'paragliding-result')" class="caption" id="paragliding-hotair">
+                                    <div onclick="toggle_prompt('paragliding-hotair', ['paragliding-autumn', 'paragliding-balloon'], 'paragliding-result')" class="caption" id="paragliding-hotair">
                                         <img class="teaser-img-ref" id="ref-paragliding" src="./assets/reference/paragliding/hot_air_balloon.png" />
 				        <p style="text-align: justify; max-width: 200px; margin:auto">
 					    "<span style="color: crimson">A hot air balloon</span> is flying above a village."</p></div>
-                                    <div onclick="toggle_prompt('paragliding-balloon', ['paragliding-hotair', 'paragliding-autumn'], 'paragliding-result')" class="caption" id="paragliding-balloon">
+				    <div onclick="toggle_prompt('paragliding-balloon', ['paragliding-autumn', 'paragliding-hotair'], 'paragliding-result')" class="caption" id="paragliding-balloon">
                                         <img class="teaser-img-ref" id="ref-paragliding" src="./assets/reference/paragliding/balloon_house.png" />
 				        <p style="text-align: justify; max-width: 200px; margin:auto">
 					    "<span style="color: crimson">A man holding balloons</span> is flying above <span style="color: steelblue">Ney York City</span>."</p></div>
@@ -217,7 +217,7 @@
 	    edited atlas textures back to the frames more naturally.
         </p>
 	<div style="text-align: center">
-            <img src="./assets/uv_opt.jpg" alt="" width="1080px" style="max-width: 75%; height: auto;" />
+            <img src="./assets/uv_opt.jpg" alt="" width="1080px" style="max-width: 80%; height: auto;" />
         </div>
         <p style="text-align: center">
             <em>UV mapping optimization process.</em>
