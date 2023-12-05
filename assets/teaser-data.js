@@ -7,7 +7,7 @@ file_paths = {
     "kite-surf-pool": "./assets/results/kite-surf/pool_bikini.gif",
     "kite-surf-monkey": "./assets/results/kite-surf/hot_spring_monkey.gif",
 
-    "paragliding-autumn": "./assets/results/paragliding/autumn+paraglide.gif",
+    "paragliding-autumn": "./assets/results/paragliding/autumn_paraglide.gif",
     "paragliding-hotair": "./assets/results/paragliding/hot_air.gif",
     "paragliding-balloon": "./assets/results/paragliding/city_balloon.gif",
 
