@@ -83,15 +83,22 @@
                                 <div>
                                     <img class="teaser-img" src="./assets/data/kite-surf.gif" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="kite-surf-result" class="teaser-img" src="./assets/results/kite-surf/hot_spring_monkey.gif" />
+                                    <img id="kite-surf-result" class="teaser-img" src="./assets/results/kite-surf/sunset_bikini.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('kite-surf-monkey', ['kite-surf-bikini'], 'kite-surf-result')" class="caption caption-active" id="kite-surf-monkey">
-                                        "<span style="color: crimson">A monkey</span> is kite surfing in <span style="color: steelblue">a hot spring</span>."</div>
-                                    <br />
-                                    <div onclick="toggle_prompt('kite-surf-bikini', ['kite-surf-monkey'], 'kite-surf-result')" class="caption" id="kite-surf-bikini">
-                                        "<span style="color: crimson">A woman wearing bikini</span> is kite surfing in <span style="color: steelblue">an outdoor swimming pool</span>."</div>
+                                    <div onclick="toggle_prompt('kite-surf-sunset', ['kite-surf-pool', 'kite-surf-monkey'], 'kite-surf-result')" class="caption caption-active" id="kite-surf-sunset">
+                                        <img class="teaser-img-ref" id="ref-yacht" src="./assets/reference/kite-surf/bikini_woman.png" />
+				        <p style="text-align: justify; max-width: 200px; margin:auto">
+					    "<span style="color: crimson">A woman wearing a bikini</span> is kite surfing in <span style="color: steelblue">the ocean at sunset</span>."</p></div>
+                                    <div onclick="toggle_prompt('kite-surf-pool', ['kite-surf-sunset', 'kite-surf-monkey'], 'kite-surf-result')" class="caption" id="kite-surf-pool">
+                                        <img class="teaser-img-ref" id="ref-yacht" src="./assets/reference/kite-surf/bikini_woman.png" />
+				        <p style="text-align: justify; max-width: 200px; margin:auto">
+					    "<span style="color: crimson">A woman wearing bikini</span> is kite surfing in <span style="color: steelblue">an outdoor swimming pool</span>."</p></div>
+				    <div onclick="toggle_prompt('kite-surf-monkey', ['kite-surf-sunset', 'kite-surf-pool'], 'kite-surf-result')" class="caption" id="kite-surf-monkey">
+                                        <img class="teaser-img-ref" id="ref-yacht" src="./assets/reference/kite-surf/monkey.png" />
+				        <p style="text-align: justify; max-width: 200px; margin:auto">
+					    "<span style="color: crimson">A monkey</span> is kite surfing in <span style="color: steelblue">a hot spring</span>."</p></div>
                                 </div>
                             </div>
 
