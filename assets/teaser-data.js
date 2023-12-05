@@ -3,8 +3,9 @@ file_paths = {
     "boat-yellowYacht": "./assets/results/boat/yellowYacht.gif",
     "boat-warshipCartoon": "./assets/results/boat/warshipCartoon.gif",
 
+    "kite-surf-sunset": "./assets/results/kite-surf/sunset_bikini.gif",
+    "kite-surf-pool": "./assets/results/kite-surf/pool_bikini.gif",
     "kite-surf-monkey": "./assets/results/kite-surf/hot_spring_monkey.gif",
-    "kite-surf-bikini": "./assets/results/kite-surf/pool_bikini.gif",
 
     "paragliding-hotair": "./assets/results/paragliding/autumn_hot_air_v2.gif",
     "paragliding-balloon": "./assets/results/paragliding/city_balloon.gif",
